@@ -1,0 +1,3 @@
+[submodule "LingoQA"]
+	path = LingoQA
+	url = https://github.com/wayveai/LingoQA.git
