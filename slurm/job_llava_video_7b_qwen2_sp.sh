@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -J LLaVa-Video - SP - Inference # job name
+#SBATCH -J LLaVa_Video_SP_Inference # job name
 #SBATCH -p gpu # partition name
 #SBATCH --gpus 1 # gpu count
 #SBATCH --mem-per-gpu 20G # memory per gpu

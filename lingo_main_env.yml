@@ -14,5 +14,5 @@ dependencies:
       - sentencepiece
       - pyarrow
       - qwen-vl-utils
-      - llava-torch
       - uform
+      - git+https://github.com/LLaVA-VL/LLaVA-NeXT.git
