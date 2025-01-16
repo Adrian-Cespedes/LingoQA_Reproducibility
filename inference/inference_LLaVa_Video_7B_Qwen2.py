@@ -39,7 +39,7 @@ def load_frames(image_folder, num_frames=5):
         else:
             print(f"Warning: Frame {frame_path} does not exist.")
             frames.append(Image.new("RGB", (336, 336)))  # Create a blank image if a frame is missing
-    frames = image_processor.preprocess(frames, return_tensors="pt")["pixel_values"].cuda().half()
+    frames = image_processor.preprocess(frames, return_tensors="pt")["pixel_values"].cuda().to(torch.bfloat16)
     return frames
 
 # Function to process the frames and make inferences with LLava
