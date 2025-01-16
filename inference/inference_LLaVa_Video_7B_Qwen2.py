@@ -16,7 +16,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Visual Question Answering Inference with LLava-Video-7B-Qwen2")
     parser.add_argument("parquet_file", type=str, help="Path to the input parquet file")
     parser.add_argument("output_csv", type=str, help="Path to the output CSV file")
-    parser.add_argument("system_prompt", type=str, default="", help="Optional system prompt for the model")
+    parser.add_argument("system_prompt", type=str, default="", nargs="?", help="Optional system prompt for the model")
 
     return parser.parse_args()
 
