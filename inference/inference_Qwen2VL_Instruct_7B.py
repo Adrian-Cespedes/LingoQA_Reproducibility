@@ -105,6 +105,13 @@ def process_and_infer(parquet_file, output_csv, system_prompt=""):
 def main():
     args = parse_args()
 
+    print("Arguments:")
+    print(f"Input parquet file: {args.parquet_file}")
+    print(f"Output CSV file: {args.output_csv}")
+    print(f"System prompt: {args.system_prompt}")
+
+    print("Starting inference...")
+
     process_and_infer(args.parquet_file, args.output_csv, args.system_prompt)
 
 if __name__ == "__main__":
