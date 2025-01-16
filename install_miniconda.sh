@@ -6,3 +6,4 @@ rm ~/miniconda3/miniconda.sh
 source ~/miniconda3/bin/activate
 
 conda init bash
+conda config --set auto_activate_base false
