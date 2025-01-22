@@ -51,11 +51,11 @@ def convert_to_conversation(sample):
             {
                 "type": "video",
                   "video": [
-                      f"file://{sample["image"][0]}",
-                      f"file://{sample["image"][1]}",
-                      f"file://{sample["image"][2]}",
-                      f"file://{sample["image"][3]}",
-                      f"file://{sample["image"][4]}",
+                      f"file://{sample['image'][0]}",
+                      f"file://{sample['image'][1]}",
+                      f"file://{sample['image'][2]}",
+                      f"file://{sample['image'][3]}",
+                      f"file://{sample['image'][4]}",
                   ],
                   "fps": 1.0,
             },
