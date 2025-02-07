@@ -41,7 +41,7 @@ def process_sample(sample, dataset_type):
         # Process images
         img_paths = [os.path.join(BASE_FOLDER, dataset_type, img) for img in sample["images"][:5]]
         # processed_images = [Image.open(p).convert("RGB").resize((448, 448)) for p in img_paths]
-        
+
         # Build conversation structure
         return {
             "messages": [
@@ -84,10 +84,10 @@ print("Dataset loaded successfully.")
 # converted_dataset = [sample['messages'] for sample in tqdm(converted_dataset, desc="Processing messages")]
 
 model, tokenizer = FastVisionModel.from_pretrained(
-    "/home/adrian.cespedes/.cache/huggingface/hub/models--unsloth--Qwen2-VL-7B-Instruct/snapshots/2ebce4455482b3a612a9ec180794dbda12123745",
+    "unsloth/Qwen2-VL-7B-Instruct",
     load_in_4bit = False, # Use 4bit to reduce memory use. False for 16bit LoRA.
     use_gradient_checkpointing = "unsloth", # True or "unsloth" for long context
-    local_files_only = True, # Use local files only
+    local_files_only = False, # Use local files only
     low_cpu_mem_usage = True,
 )
 
