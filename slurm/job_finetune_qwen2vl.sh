@@ -2,10 +2,10 @@
 #SBATCH -J Qwen2VL_Finetune # job name
 #SBATCH -p gpu # partition name
 #SBATCH --gpus 1 # gpu count
-#SBATCH --mem-per-gpu 20G # memory per gpu
-#SBATCH --cpus-per-task 8 # number of CPUs per task
-#SBATCH --nodelist=ag001
+#SBATCH --mem-per-gpu 120G # memory per gpu
+#SBATCH --cpus-per-task 32 # number of CPUs per task
+#SBATCH --nodelist=g003
 
-module load cuda
+module load cuda gnu12 autotools
 python training/train_Qwen2VL.py
-module unload cuda
+module unload cuda gnu12 autotools
