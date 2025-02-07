@@ -169,3 +169,14 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# Misc
+*.csv
+*.zip
+*.parquet
+images/*
+training/action/*
+training/scenery/*
+unsloth_compiled_cache/*
+outputs/*
