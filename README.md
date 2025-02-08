@@ -1,6 +1,12 @@
 # LingoQA Reproducibility
 This repo contains some scripts to reproduce/enhance the results presented in the [LingoQA](https://arxiv.org/abs/2312.14115) paper.
 
+## Important links
+- [LingoQA Repository](https://github.com/wayveai/LingoQA): Contains the evaluation script used to evaluate the models
+- [Unsloth](https://github.com/unslothai/unsloth): Framework used for fine-tuning models
+
+***
+
 > The scripts are designed to be run on a SLURM cluster. Still, instructions for both SLURM and non-SLURM environments are provided.
 
 ## Installation
@@ -46,7 +52,7 @@ chmod +x ./download_training.sh && ./download_training.sh
 ### Running Pre-trained Models
 If you only want to run inference using pre-trained models, you can use the scripts inside the slurm/ directory. If you're not using a SLURM cluster, you can extract the Python command from these scripts and run it directly.
 
-Example:
+**Example:**
 
 ```bash
 # SLURM
@@ -64,6 +70,15 @@ sbatch slurm/job_finetune_qwen2vl.sh
 # Non-SLURM
 python training/finetune_qwen2vl.py
 ```
+
+### Evaluating Models
+To evaluate the fine-tuned models, run the evaluation script provided by the LingoQA [repository](https://github.com/wayveai/LingoQA):
+
+```bash
+conda activate lingo_judge
+python ./LingoQA/benchmark/evaluate.py --predictions_path ./path_to_predictions/predictions.csv
+```
+
 
 ## Notes
 - You may need to adjust `--nodelist` flags in the SLURM scripts to match your cluster's configuration.
