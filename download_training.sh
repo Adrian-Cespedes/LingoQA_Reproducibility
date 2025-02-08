@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Scenery Train dataset
 gdown https://drive.google.com/drive/folders/1GiwWGfrM8pO27CYLu_9Uwtdcz0JoqHr7 -O training/ --folder
 

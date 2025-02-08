@@ -7,5 +7,5 @@
 #SBATCH --nodelist=g003
 
 module load cuda gnu12 autotools
-python training/train_Qwen2VL.py
+python training/finetune_qwen2vl.py
 module unload cuda gnu12 autotools

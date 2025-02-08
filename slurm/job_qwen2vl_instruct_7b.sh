@@ -7,5 +7,5 @@
 #SBATCH --nodelist=ag001
 
 module load cuda
-python inference/inference_Qwen2VL_Instruct_7B.py val.parquet predictions_qwen2vl.csv
+python inference/inference_qwen2vl_instruct_7b.py val.parquet predictions_qwen2vl.csv
 module unload cuda

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 conda create --name lingo_judge \
     python=3.10.9 \
     pip \

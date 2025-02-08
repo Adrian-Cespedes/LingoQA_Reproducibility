@@ -1,3 +1,5 @@
+#!/bin/bash
+
 conda create --name unsloth_env \
     python=3.11 \
     pytorch-cuda=12.1 \

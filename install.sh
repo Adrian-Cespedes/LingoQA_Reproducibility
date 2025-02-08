@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git submodule update --init --recursive
 
 conda create --name lingo_main \

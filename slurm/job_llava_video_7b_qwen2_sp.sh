@@ -7,5 +7,5 @@
 #SBATCH --nodelist=ag001
 
 module load cuda
-python inference/inference_LLaVa_Video_7B_Qwen2.py val.parquet predictions_llava_video_sp.csv "You are a Visual Question Answering (VQA) model. Please answer concisely in a maximum of 2 sentences."
+python inference/inference_llava_video_7b_qwen2.py val.parquet predictions_llava_video_sp.csv "You are a Visual Question Answering (VQA) model. Please answer concisely in a maximum of 2 sentences."
 module unload cuda

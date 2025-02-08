@@ -5,5 +5,5 @@
 #SBATCH --mem-per-gpu 20G # memory per gpu
 
 module load cuda
-python inference/inference_git_ms_177M.py
+python inference/inference_git_ms_177m.py
 module unload cuda

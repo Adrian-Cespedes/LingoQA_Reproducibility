@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # File IDs
 zip_file_id="1U5tBTZjw0rH9ID1JuuWsOmIp2HNvQvQo"
 parquet_file_id="1I8u6uYysQUstoVYZapyRQkXmOwr-AG3d"

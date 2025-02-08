@@ -5,5 +5,5 @@
 #SBATCH --mem-per-gpu 20G # memory per gpu
 
 module load cuda
-python inference/inference_uform_1-5B.py
+python inference/inference_uform_1_5b.py
 module unload cuda

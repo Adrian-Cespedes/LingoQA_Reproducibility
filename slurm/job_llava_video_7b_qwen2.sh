@@ -7,5 +7,5 @@
 #SBATCH --nodelist=ag001
 
 module load cuda
-python inference/inference_LLaVa_Video_7B_Qwen2.py val.parquet predictions_llava_video.csv
+python inference/inference_llava_video_7b_qwen2.py val.parquet predictions_llava_video.csv
 module unload cuda
